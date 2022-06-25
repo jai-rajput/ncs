@@ -8,7 +8,8 @@ then
     sudo add-apt-repository ppa:ondrej/php
     sudo apt-get update
     sudo apt-get upgrade
-    sudo apt install php$PHP_VER --directory $PHP_PATH
+    sudo apt install php$PHP_VER-cgi 
+    unzip file.zip -d $PHP_PATH
     echo "PHP version $PHP_VER successfully installed!"
 else
     echo "version $PHP_VER is not available"
